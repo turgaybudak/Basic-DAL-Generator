@@ -1,0 +1,10 @@
+C:\Users\turga\source\repos\YazilimAraciV2\bin\Debug\YazilimAraciV2.exe.config
+C:\Users\turga\source\repos\YazilimAraciV2\bin\Debug\YazilimAraciV2.exe
+C:\Users\turga\source\repos\YazilimAraciV2\bin\Debug\YazilimAraciV2.pdb
+C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.csprojAssemblyReference.cache
+C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.YazilimAraci.resources
+C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.Properties.Resources.resources
+C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.csproj.GenerateResource.cache
+C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.csproj.CoreCompileInputs.cache
+C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.exe
+C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.pdb
