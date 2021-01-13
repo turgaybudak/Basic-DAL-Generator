@@ -8,3 +8,12 @@ C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.csproj.Gener
 C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.csproj.CoreCompileInputs.cache
 C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.exe
 C:\Users\turga\source\repos\YazilimAraciV2\obj\Debug\YazilimAraciV2.pdb
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\bin\Debug\YazilimAraciV2.exe.config
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\bin\Debug\YazilimAraciV2.exe
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\bin\Debug\YazilimAraciV2.pdb
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.YazilimAraci.resources
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.Properties.Resources.resources
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.csproj.GenerateResource.cache
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.csproj.CoreCompileInputs.cache
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.exe
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.pdb

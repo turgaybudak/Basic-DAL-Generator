@@ -368,7 +368,6 @@ namespace %ProjeAdi%.Business
             catch (Exception)
             {
 
-                throw;
             }
 
 
