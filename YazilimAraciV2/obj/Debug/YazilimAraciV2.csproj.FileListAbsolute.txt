@@ -17,3 +17,4 @@ D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAr
 D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.csproj.CoreCompileInputs.cache
 D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.exe
 D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.pdb
+D:\Çalışmalar\BasicDal\Basic-DAL-Generator\YazilimAraciV2\obj\Debug\YazilimAraciV2.csprojAssemblyReference.cache

@@ -143,6 +143,7 @@ namespace YazilimAraciV2
 
         public static double Yuzde;
         public static string DosyaYolu = @"c:/YazilimAraciV2";
+
         public static List<DBNesneler_Type> Nesneler;
 
         private void YazilimAraci_Load(object sender, EventArgs e)
@@ -200,8 +201,9 @@ namespace YazilimAraciV2
         {
             foreach (var item in Nesneler.GroupBy(a => a.Tablo).Select(a => a.Key))
             {
-
-                string Business = @"
+                try
+                {
+                    string Business = @"
 
 using %ProjeAdi%.Genel;
 using %ProjeAdi%.Types;
@@ -217,19 +219,19 @@ namespace %ProjeAdi%.Business
         public " + item + @"()
         {
             TableName = 'dbo." + item + @"';
-            PrimaryKey = '" + Nesneler.Where(a => a.Tablo == item && a.PKmi).First().Kolon + @"';
+            PrimaryKey = '" + (Nesneler.Where(a => a.Tablo == item && a.PKmi).Any() ? Nesneler.Where(a => a.Tablo == item && a.PKmi).First().Kolon : "") + @"';
         }
 
         public override int Add(" + item + @"_Type item)
         {
             String[] fields = { " +
-                                    string.Join("\n", Nesneler.Where(a => a.Tablo == item).Select(a => "'" + a.Kolon + "'"))
-                                    + @" };
+                                  string.Join(",", Nesneler.Where(a => a.Tablo == item).Select(a => "'" + a.Kolon + "'"))
+                                  + @" };
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = Sabitler.sql_INSERT(fields, TableName);
             " +
-                                    string.Join("\n", Nesneler.Where(a => a.Tablo == item).Select(a => "cmd.Parameters.AddWithValue('" + a.Kolon + "', item." + a.Kolon + ");"))
-                                    + @"
+                                  string.Join("\n", Nesneler.Where(a => a.Tablo == item).Select(a => "cmd.Parameters.AddWithValue('" + a.Kolon + "', item." + a.Kolon + ");"))
+                                  + @"
             return ExecuteNonQuery(cmd);
         }
 
@@ -252,8 +254,8 @@ namespace %ProjeAdi%.Business
 
            
              " +
-        string.Join("\n", Nesneler.Where(a => a.Tablo == item).Select(a => "_" + item + @"_Type." + a.Kolon + @" = " + TipeGoreConvert(a.Kolon, a.KolonTipi) + ";"))
-                                    + @"
+      string.Join("\n", Nesneler.Where(a => a.Tablo == item).Select(a => "_" + item + @"_Type." + a.Kolon + @" = " + TipeGoreConvert(a.Kolon, a.KolonTipi) + ";"))
+                                  + @"
             return _" + item + @"_Type;
         }
 
@@ -264,8 +266,15 @@ namespace %ProjeAdi%.Business
 
 ";
 
-                Business = ParametreleriGir(Business, "%ProjeAdi%", ProjeAdi);
-                ClassKaydet(DosyaYolu + "/" + ProjeAdi + "/Business/" + item + ".cs", Business);
+                    Business = ParametreleriGir(Business, "%ProjeAdi%", ProjeAdi);
+                    ClassKaydet(DosyaYolu + "/" + ProjeAdi + "/Business/" + item + ".cs", Business);
+                }
+                catch (Exception ex)
+                {
+
+
+                }
+
             }
         }
 
@@ -379,7 +388,7 @@ namespace %ProjeAdi%.Business
 
             if (!Directory.Exists(DosyaYolu))//Anadosya
                 Directory.CreateDirectory(DosyaYolu);
-         
+
 
 
             if (!Directory.Exists(DosyaYolu + "/" + ProjeAdi))//ProjeDosyasi
